@@ -6,26 +6,32 @@
     <title>Hello World!</title>
   </head>
   <body>
+    <img src="./images/panda.jpg"><h1>PANDA Project Management <br>Information Database</h1>
+
     <button id="startproject">Start Project</button>
+
     <div id="displayarea">
+      
       <form id="charterform">
         Project Sponsor:<br> <input type="text" id="sponsor"><br>
+        
         Project name:<br> <input type="text" id="projectname"><br>
         Start Date:<br> <input type="date" id="startdate"><br>
         Completion Date:<br> <input type="date" id="enddate"><br>
         <hr>
-        Statement of Work: <br><textarea id="sow"></textarea>
-        Scope: <br><textarea id="scope"></textarea>
-        Project Requirements: <br><textarea id="requirements"></textarea>
-        Business Case: <br><textarea id="bcase"></textarea>
-        Milestones: <br><textarea id="milestones"></textarea>
-        Constraints: <br><textarea id="constraints"></textarea>
-        List of Stake Holders: <br> <textarea id="stakeholders"></textarea>
-
+        <div id="textareas">
+        <span>Statement of Work: <br><textarea id="sow" ></textarea></span>
+        <span>Scope: <br><textarea id="scope"></textarea></span>
+        <span>Project Requirements: <br><textarea id="requirements"></textarea></span>
+          <span>Business Case: <br><textarea id="bcase"></textarea></span>
+            <span>Milestones: <br><textarea id="milestones"></textarea></span>
+            <span>Constraints: <br><textarea id="constraints"></textarea></span>
+            <span>List of Stake Holders: <br> <textarea id="stakeholders"></textarea></span>
+        </div>
         <input type="submit" id="submitbtn">
 
       </form>
-
+      
     </div>
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
